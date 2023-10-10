@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red: #d01c28;
+  --gery: #2e2e2e;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav .one {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 72px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  height: 32px;
+  background: var(--red);
+  color: aliceblue;
+  font-weight: 500;
+}
+
+.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: calc(100vh-72px);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.hero-content h1 {
+  font-size: 108px;
+  line-height: 102px;
+  letter-spacing: 0%;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 400px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.Category-btn {
+  background: #fff;
+  color: black;
+  border: 1px solid black;
+}
+
+.available p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.available-platform {
+  display: flex;
+  gap: 20px;
+}
+.two {
+  display: none;
+}
+.two p {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .two {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  nav button {
+    display: none;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero-content {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .hero-content h1 {
+    font-size: 4.3rem;
+  }
+  .hero-image {
+    width: 100%;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+  .logo {
+    padding-left: 30px;
+  }
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 30px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .change p {
+    display: none;
+  }
+}
